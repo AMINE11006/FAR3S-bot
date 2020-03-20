@@ -3,7 +3,7 @@ const config = require("./storage/config.json");
 const client = new Discord.Client();
 
 
-client.login(config.token);
+client.login(process.env.TOKEN);
 
 client.on('ready', () => {
     console.log('Démarrage');
